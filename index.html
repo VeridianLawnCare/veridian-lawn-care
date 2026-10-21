@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Veridian Lawn Care | Jacksonville, FL</title>
+
+    <meta name="description"
+        content="Professional lawn maintenance and landscaping in Jacksonville, Florida. Contact Veridian Lawn Care for a quote.">
+
+    
+    <style>
+        /* COLORS AND BASIC SETTINGS */
+
+        :root {
+            --green: #173f2b;
+            --light-green: #8eae78;
+            --cream: #f7f7f0;
+            --white: #ffffff;
+            --text: #29342c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* TOP NAVIGATION */
+
+        header {
+            background: #E8E0CC;;
+color: #173F2B;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+.logo img {
+    height: 56px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+        .logo span {
+            color: var(--light-green);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+       nav a {
+    color: #173F2B;
+    font-size: 14px;
+}
+
+        nav a:hover {
+    color: #668653;
+}
+
+        /* MAIN BANNER */
+
+        
+.hero {
+    min-height: 680px;
+    padding: 110px 8%;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 31, 19, 0.96) 0%,
+            rgba(8, 31, 19, 0.78) 48%,
+            rgba(8, 31, 19, 0.15) 100%
+        ),
+        url("https://centralflpersonaltouch.com/assets/img/services/lawn-mowing.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+        }
+
+        .hero-content {
+            max-width: 680px;
+        }
+
+        .eyebrow {
+            color: var(--light-green);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        
+.hero h1 {
+    max-width: 720px;
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -2px;
+    margin-bottom: 26px;
+    text-wrap: balance;
+}
+
+
+        .hero p {
+            font-size: 18px;
+            max-width: 520px;
+            margin-bottom: 28px;
+            color: #f0f2ed;
+        }
+
+        /* BUTTONS */
+
+        
+.button {
+    display: inline-block;
+    padding: 16px 26px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    transition: all 0.25s ease;
+}
+
+
+        .button-primary {
+            background: var(--light-green);
+            color: #142b1c;
+        }
+
+        .button-primary:hover {
+            background: var(--white);
+        }
+
+        .button-outline {
+            border: 1px solid white;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .button-outline:hover {
+            background: white;
+            color: var(--green);
+        }
+
+        /* GENERAL SECTION STYLING */
+
+        section {
+            padding: 85px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.2;
+            color: var(--green);
+            margin-bottom: 16px;
+        }
+
+        .section-heading p {
+            color: #667066;
+        }
+
+        /* SERVICES */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        
+.service-card {
+    background: var(--white);
+    padding: 34px 30px;
+    border-radius: 10px;
+    border: 1px solid #e1e7dc;
+    box-shadow: 0 8px 24px rgba(23, 63, 43, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+
+        .service-icon {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: var(--green);
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #667066;
+            font-size: 15px;
+        }
+
+        /* ABOUT SECTION */
+
+        .about {
+            background: #e9eee4;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 760px;
+            margin: auto;
+        }
+
+        .about h2 {
+            color: var(--green);
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #536055;
+            font-size: 17px;
+        }
+
+        /* QUOTE SECTION */
+
+        .contact {
+            background: var(--green);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: clamp(30px, 4vw, 44px);
+            margin-bottom: 16px;
+        }
+
+        .contact p {
+            max-width: 560px;
+            margin: 0 auto 24px;
+            color: #e1e8df;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #102c1d;
+            color: #dce4da;
+            text-align: center;
+            padding: 28px 6%;
+            font-size: 13px;
+        }
+
+        footer p + p {
+            margin-top: 8px;
+        }
+
+        /* MOBILE PHONE LAYOUT */
+
+        @media (max-width: 760px) {
+            header {
+                padding: 20px 6%;
+            }
+
+            nav {
+                gap: 16px;
+            }
+
+            .hero {
+                min-height: 520px;
+                padding: 75px 6%;
+            
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .button-outline {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+   
+/* VERIDIAN DESIGN UPGRADES */
+
+/* Keep the navigation visible while scrolling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Make the main banner more cinematic */
+.hero {
+    min-height: 620px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Make the main headline easier to read */
+.hero h1 {
+    letter-spacing: -1.5px;
+    text-wrap: balance;
+}
+
+/* Make buttons feel more polished */
+.button {
+    transition: background-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.button-primary {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+/* Add a subtle effect to the service cards */
+.service-card {
+    border-radius: 12px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(23, 63, 43, 0.12);
+}
+
+
+/* Improve the visual hierarchy of section headings */
+.section-heading h2,
+.about h2,
+.contact h2 {
+    letter-spacing: -0.8px;
+}
+
+/* Make keyboard navigation easier */
+a:focus-visible {
+    outline: 3px solid var(--light-green);
+    outline-offset: 4px;
+}
+
+/* Prevent animations on devices that request less motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+/* VERIDIAN QUOTE POP-UP */
+.quote-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-modal.is-open {
+    display: flex;
+}
+
+.quote-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 29, 19, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.quote-modal-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 540px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 36px;
+    background: #E8E0CC;
+    color: #173F2B;
+    border-radius: 16px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+}
+
+.quote-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: 0;
+    background: transparent;
+    color: #173F2B;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.quote-eyebrow {
+    margin: 0 0 8px;
+    color: #668653;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.quote-modal-box h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.quote-intro {
+    margin: 0 0 24px;
+}
+
+.quote-modal-box form {
+    display: grid;
+    gap: 9px;
+}
+
+.quote-modal-box label {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.quote-modal-box input,
+.quote-modal-box select,
+.quote-modal-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C5BCA6;
+    border-radius: 7px;
+    background: #FBF9F2;
+    color: #173F2B;
+    font: inherit;
+}
+
+.quote-modal-box input:focus,
+.quote-modal-box select:focus,
+.quote-modal-box textarea:focus {
+    outline: 2px solid #668653;
+    outline-offset: 1px;
+}
+
+.quote-submit {
+    width: 100%;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.quote-contact-options {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #C5BCA6;
+    font-size: 14px;
+    text-align: center;
+}
+
+.quote-contact-options p {
+    margin: 4px 0;
+}
+
+.quote-status {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .quote-modal {
+        padding: 12px;
+    }
+
+    .quote-modal-box {
+        padding: 28px 20px;
+        max-height: 94vh;
+    }
+
+    .quote-modal-box h2 {
+        font-size: 25px;
+    }
+}
+
+   </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <a class="logo" href="#">
+    <img src="Veridian Lawn Care Logo.png" alt="Veridian Lawn Care">
+</a>
+
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MAIN BANNER -->
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+
+                <p class="eyebrow">Lawn Care · Jacksonville, Florida</p>
+
+                <h1>A Lawn You'll Love Coming Home To.</h1>
+
+                <p>
+                    Reliable lawn maintenance and property care
+                    for Jacksonville homeowners. Professional service,
+                    attention to detail, and a yard you can be proud of.
+                </p>
+
+                <a class="button button-primary" href="#" onclick="openQuoteForm(); return false;">
+                    REQUEST A FREE QUOTE
+                </a>
+
+                <a class="button button-outline" href="#services">
+                    OUR SERVICES
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+
+        <section id="services">
+            <div class="section-heading">
+                <h2>Lawn Care Made Simple</h2>
+                <p>
+                    From routine maintenance to one-time cleanups,
+                    we help keep your property looking its best.
+                </p>
+            </div>
+
+            <div class="services">
+
+                <article class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Lawn Maintenance</h3>
+                    <p>
+                        Lawn mowing, edging, string trimming,
+                        and blowing off hard surfaces for a
+                        neat, finished appearance.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Landscaping</h3>
+                    <p>
+                        Landscape bed maintenance and property
+                        improvements to help your outdoor spaces
+                        look clean and well cared for.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🍃</div>
+                    <h3>Property Cleanups</h3>
+                    <p>
+                        One-time yard cleanups and overgrown
+                        property maintenance to get your
+                        outdoor space back in shape.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <p class="eyebrow">MEET THE PEOPLE BEHIND VERIDIAN</p>
+
+                <h2>Built on Hard Work. Rooted in Our Community</h2>
+
+                <p>
+                    My name is Chris, and I started Veridian Lawn Care with my fiancée because we wanted to build something of our own and provide a service our community could count on.
+
+Working in construction has taught me the importance of showing up, paying attention to the details, and taking pride in the work you do. Those are the same principles I bring to every lawn we maintain.
+
+Veridian is a small, owner-operated business. I handle the lawn care, while my fiancée helps manage the administrative side and keep things organized behind the scenes. It's just the two of us building this company together, one customer and one property at a time.
+
+We're proud to serve homeowners in Jacksonville and the Kernan area. When you choose Veridian, you're supporting a local business built on hard work, personal accountability, and the belief that good service still matters.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="contact" id="contact">
+            <h2>Ready for a Better-Looking Lawn?</h2>
+
+            <p>
+                Have a question or ready to get started? We're happy to hear from you. Veridian Lawn Care provides lawn mowing, edging, trimming, and ongoing lawn maintenance in Jacksonville and the Kernan area. Request a free quote, and we'll follow up with you about your property and needs.
+            </p>
+
+            <!-- We will connect this button to Jobber next. -->
+
+            <a <a class="button button-primary" href="#" onclick="openQuoteForm(); return false;">
+    GET A FREE QUOTE
+</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p><strong>VERIDIAN LAWN CARE</strong></p>
+        <p>Serving Jacksonville, Florida and surrounding areas.</p>
+        <p>Copyright &copy; <span id="year"></span> Veridian Lawn Care</p>
+    </footer>
+
+    
+<!-- VERIDIAN QUOTE POP-UP -->
+<div class="quote-modal" id="quoteModal" aria-hidden="true">
+    <div class="quote-modal-backdrop" onclick="closeQuoteForm()"></div>
+
+    <div class="quote-modal-box" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+        <button class="quote-close" type="button" onclick="closeQuoteForm()" aria-label="Close">&times;</button>
+
+        <p class="quote-eyebrow">VERIDIAN LAWN CARE</p>
+        <h2 id="quoteTitle">Request a Free Quote</h2>
+        <p class="quote-intro">Tell us a little about your property and the services you need.</p>
+
+        <form id="quoteForm">
+            <label for="quoteName">Full name *</label>
+            <input id="quoteName" name="name" type="text" autocomplete="name" required>
+
+            <label for="quotePhone">Phone number *</label>
+            <input id="quotePhone" name="phone" type="tel" autocomplete="tel" required>
+
+            <label for="quoteEmail">Email address *</label>
+            <input id="quoteEmail" name="email" type="email" autocomplete="email" required>
+
+            <label for="quoteAddress">Property address *</label>
+            <input id="quoteAddress" name="address" type="text" autocomplete="street-address" required>
+
+            <label for="quoteService">What service do you need? *</label>
+            <select id="quoteService" name="service" required>
+                <option value="">Choose a service</option>
+                <option>Lawn mowing</option>
+                <option>Edging and trimming</option>
+                <option>Full lawn maintenance</option>
+                <option>One-time cleanup</option>
+                <option>Other</option>
+            </select>
+
+            <label for="quoteNotes">Anything else we should know?</label>
+            <textarea id="quoteNotes" name="notes" rows="3" placeholder="Lawn size, gate access, or other details..."></textarea>
+
+            <button class="button button-primary quote-submit" type="submit">Submit Quote Request</button>
+            <p class="quote-status" id="quoteStatus" role="status"></p>
+        </form>
+
+        <div class="quote-contact-options">
+            <p>Prefer to reach us by email?</p>
+            <p>Email us at <a href="mailto:Veridianlawn@gmail.com">Veridianlawn@gmail.com</a> and we'll be happy to help.</p>
+            <!-- We'll add your real phone number here next. -->
+        </div>
+    </div>
+</div>
+<!-- END VERIDIAN QUOTE POP-UP -->
+
+    <script>
+        // Automatically display the current year.
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+function openQuoteForm() {
+    const modal = document.getElementById("quoteModal");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    document.getElementById("quoteName").focus();
+}
+
+function closeQuoteForm() {
+    const modal = document.getElementById("quoteModal");
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+
+const QUOTE_FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxvifZSkp_W9Q-Tx0fnAjvxTWAM87zEZJlOiTLM1nr0mnc_UAoSllh2m0R7kdjvj7V3/exec";
+
+document.getElementById("quoteForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const status = document.getElementById("quoteStatus");
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    status.textContent = "Sending your request...";
+    submitButton.disabled = true;
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+        await fetch(QUOTE_FORM_ENDPOINT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8"
+            },
+            body: JSON.stringify(data)
+        });
+
+        status.textContent =
+            "Thanks! Please allow a moment for us to receive your request.";
+        form.reset();
+
+    } catch (error) {
+        status.textContent =
+            "We couldn't send your request. Please try again or contact us directly.";
+    } finally {
+        submitButton.disabled = false;
+    }
+});
+
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeQuoteForm();
+    }
+});
+
+    </script>
+
+</body>
+</html>
